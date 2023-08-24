@@ -1,0 +1,35 @@
+@import './header.css';
+@import './character.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --colorTextMenu: #F5F5F0;
+    --colorText: #fbfbfb;
+}
+
+.interface {
+    width: 100%;
+    display: flex;
+    min-height: 100vh;
+    flex-flow: column;
+    overflow-x: hidden;
+    justify-content: center;
+    background-color: #b75fcd;
+}
+
+.interface .iMain {
+    flex: 1;
+    display: flex;
+}
+
+@media (max-width: 1024px) {
+    .interface {
+        padding-bottom: 150px;
+    }
+}

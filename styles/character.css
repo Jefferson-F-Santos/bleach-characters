@@ -1,0 +1,159 @@
+.iMain .character {
+    position: relative;
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    max-width: 1400px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.character .contentText {
+    display: flex;
+    flex-flow: column;
+    margin-right: 2rem;
+    align-content: flex-start;
+}
+
+.contentText h2 {
+    font-size: 3rem;
+    color: var(--colorText);
+}
+
+.contentText h2 span {
+    font-size: 4rem;
+}
+
+.contentText p {
+    line-height: 30px;
+    font-size: 1.3rem;
+    padding-right: 2rem;
+    letter-spacing: .3px;
+    color: var(--colorText);
+}
+
+.contentText a {
+    color: #222;
+    max-width: 290px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-top: 1.5rem;
+    border-radius: 50px;
+    padding: .7rem 1rem;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: all .3s ease;
+    background-color: #FFF;
+    text-transform: uppercase;
+}
+
+.contentText a:hover {
+    background-color: #F5F5F5;
+}
+
+.character .contentImage {
+    height: 750px;
+}
+
+.contentImage img {
+    height: 100%;
+}
+
+.character .characterSelection {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    transform: translateX(-50%);
+}
+
+.characterSelection .imageCharacter {
+    height: 100px;
+    cursor: pointer;
+    transition: all .4s ease-out;
+}
+
+.characterSelection .imageCharacter + .imageCharacter {
+    margin-left: 1.5rem;
+}
+
+.characterSelection .imageCharacter:hover {
+    transform: scale(1.5);
+}
+
+.imageCharacter img {
+    height: 100%;
+}
+
+@media (max-width: 1400px) {
+    .iMain .character {
+        padding: 0 2rem;
+    }
+    .character .contentImage {
+        height: 650px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .character .contentText {
+        width: 100%;
+        margin: 5rem 0;
+    }
+    .iMain .character {
+        padding: 0 40px;
+        flex-flow: column;
+        align-items: center;
+    }
+    .contentText h2 {
+        font-size: 2.3rem;
+    }
+    
+    .contentText h2 span {
+        font-size: 3.3rem;
+    }
+    
+    .contentText p {
+        font-size: 1.1rem;
+    }
+    .contentText a {
+        font-size: 1rem;
+        max-width: 260px;
+        padding: .7rem .9rem;
+        letter-spacing: .8px;
+    }
+    .character .characterSelection {
+        bottom: -125px;
+    }
+}
+
+@media (max-width: 650px) {
+    .character .contentText {
+        margin: 4rem 0;
+    }
+    .character .contentImage {
+        height: 550px;
+    }
+    .character .characterSelection {
+        bottom: -115px;
+    }
+    .characterSelection .imageCharacter {
+        height: 90px;
+    }
+}
+
+@media (max-width: 550px) {
+    .character .contentText {
+        margin: 3rem 0;
+    }
+    .character .contentImage {
+        height: 450px;
+    }
+    .character .characterSelection {
+        bottom: -110px;
+    }
+    .characterSelection .imageCharacter {
+        height: 85px;
+    }
+}
