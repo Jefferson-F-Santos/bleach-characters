@@ -1,3 +1,3 @@
-# Destaques dos Meus 5 Personagens Favoritos do Anime Bleach
+# Spotlight on My Top 5 Favorite Bleach Anime Characters
 
 In this simple and passionate project, I delved into the Bleach universe to pay homage to my favorite characters through the creation of a unique web page. Using skills in HTML, CSS, and pure JavaScript, I developed a platform that highlights the distinctive characteristics of each character. Interactive touches implemented with JavaScript add dynamism, providing a modest yet impactful experience that reflects my personal connection with these captivating characters. Over time, I plan to keep adding more elements to the page to further enrich this tribute.
